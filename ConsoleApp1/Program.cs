@@ -36,7 +36,7 @@ namespace ConsoleApp1
         private static void MacOsStuff()
         {
             string pathToExeFile = Assembly.GetEntryAssembly().Location[..^4] + ".exe";
-            Process.Start("osascript", $"-e 'tell application \"System Events\" to make login item at end with properties {{name:\"WasabiWallet\",path:\"{pathToExeFile}\", hidden:false}}'");
+            Process.Start("osascript", $"-e 'tell application \"System Events\"\n make new login item at end of login items with properties {{name:\"WasabiWallet\",path:\"{pathToExeFile}\", hidden:false}} \nend tell'");
 
             //Process.Start("osascript -e 'tell application \"System Events\" to delete login item \"WasabiWallet\"'");
         }
