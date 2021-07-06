@@ -37,9 +37,9 @@ namespace ConsoleApp1
         {
             string pathToExeFile = Assembly.GetEntryAssembly().Location[..^4] + ".exe";
 
-            Process.Start("osascript", $"-e 'tell application \"System Events\"\n display dialog \"Hello World\"\n end tell'");
+            Process.Start("osascript", $"tell application \"System Events\"\n display dialog \"Hello World\"\n end tell");
 
-            //Process.Start("osascript", $"-e 'tell application \"System Events\"\n make new login item at end of login items with properties {{name:\"WasabiWallet\",path:\"{pathToExeFile}\", hidden:false}} \nend tell'");
+            //Process.Start("osascript", $"-e 'tell application \"System Events\"\n make new login item at end of login items with properties {{name:\"WasabiWallet\",path:\"{pathToExeFile}\", hidden:false}}\nend tell'");
 
             //Process.Start("osascript -e 'tell application \"System Events\" to delete login item \"WasabiWallet\"'");
         }
