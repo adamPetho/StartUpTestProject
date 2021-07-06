@@ -37,7 +37,7 @@ namespace ConsoleApp1
         {
             string pathToExeFile = Assembly.GetEntryAssembly().Location[..^4] + ".exe";
 
-            Process.Start("osascript -e 'tell application \"Finder\"\ndisplay dialog \"Hello World\"\nend tell");
+            Process.Start("osascript -e 'tell application \"Finder\" display dialog \"Hello World\" end tell");
 
             //Process.Start("osascript", $"-e 'tell application \"System Events\"\n make new login item at end of login items with properties {{name:\"WasabiWallet\",path:\"{pathToExeFile}\", hidden:false}} \nend tell'");
 
