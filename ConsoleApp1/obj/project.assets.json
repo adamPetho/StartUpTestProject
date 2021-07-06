@@ -247,11 +247,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Startupproject\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "E:\\StartUpTestProject\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "E:\\Startupproject\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectPath": "E:\\StartUpTestProject\\ConsoleApp1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\petho\\.nuget\\packages\\",
-      "outputPath": "E:\\Startupproject\\ConsoleApp1\\obj\\",
+      "outputPath": "E:\\StartUpTestProject\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\petho\\AppData\\Roaming\\NuGet\\NuGet.Config",

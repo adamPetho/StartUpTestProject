@@ -11,7 +11,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            LinuxStuff();
+            MacOsStuff();
             Thread.Sleep(2000);
 
             Console.WriteLine("Done.");
@@ -31,6 +31,14 @@ namespace ConsoleApp1
             string result = proc.StandardOutput.ReadToEnd();
             Console.WriteLine(result);
             proc.Dispose();
+        }
+
+        private static void MacOsStuff()
+        {
+            string pathToExeFile = Assembly.GetEntryAssembly().Location[..^4] + ".exe";
+            Process.Start("osascript", $"-e 'tell application \"System Events\" to make login item at end with properties {{name:\"WasabiWallet\",path:\"{pathToExeFile}\", hidden:false}}'");
+
+            //Process.Start("osascript -e 'tell application \"System Events\" to delete login item \"WasabiWallet\"'");
         }
     }
 }

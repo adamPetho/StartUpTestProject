@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z0nxnkwXDAIXT25eOilM8/OQRZkuO1jnZJyY3voLs+mZsxpft6cn+cgj125UGWvC1BaNwghSmMbylFQ16ucGwQ==",
+  "dgSpecHash": "yKUIUm8gnRlucxxctMjc9roMZhIxPd35XMqucbH+tq6uywwRpBbktmSgEP7o5yFLmwu+J3133dLXQTSeQt/y+g==",
   "success": true,
-  "projectFilePath": "E:\\Startupproject\\ConsoleApp1\\ConsoleApp1.csproj",
+  "projectFilePath": "E:\\StartUpTestProject\\ConsoleApp1\\ConsoleApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\petho\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\petho\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
