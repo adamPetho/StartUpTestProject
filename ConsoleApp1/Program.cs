@@ -35,14 +35,14 @@ namespace ConsoleApp1
 
         private static void MacOsStuff()
         {
-            string arguments = $"-c \"osascript -e \' tell application \\\"System Events\\\" to make new login item at end of login items with properties {{name:\\\"WasabiWallet\\\", path:\\\"/Applications/WasabiWallet.app\\\",hidden:false}} \' \"";
-
+            string argumentToAdd = $"-c \"osascript -e \' tell application \\\"System Events\\\" to make new login item at end of login items with properties {{name:\\\"WasabiWallet\\\", path:\\\"/Applications/WasabiWallet.app\\\",hidden:false}} \' \"";
+            string argumentsToDelete = $"-c \"osascript -e \' tell application \\\"System Events\\\" to delete login item \\\"WasabiWallet\\\" \' \"";
             ProcessStartInfo processInfo = new()
             {
                 UseShellExecute = true,
                 WindowStyle = ProcessWindowStyle.Normal,
                 FileName = "/bin/bash",
-                Arguments = arguments,
+                Arguments = argumentToAdd,
                 CreateNoWindow = false
             };
 
