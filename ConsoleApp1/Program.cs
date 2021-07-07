@@ -19,18 +19,15 @@ namespace ConsoleApp1
 
         private static void LinuxStuff()
         {
-            ProcessStartInfo processStartInfo = new("/bin/bash", "-c \"ls -l\"");
-            processStartInfo.RedirectStandardOutput = true;
-            processStartInfo.UseShellExecute = false;
-            processStartInfo.CreateNoWindow = false;
+            string argumentsForLinux = "ls -l";
+            ProcessStartInfo processStartInfo = new() 
+            {
+                UseShellExecute = true,
+                CreateNoWindow = false,
+                Arguments = argumentsForLinux
+            };
 
-            System.Diagnostics.Process proc = new();
-            proc.StartInfo = processStartInfo;
-            proc.Start();
-
-            string result = proc.StandardOutput.ReadToEnd();
-            Console.WriteLine(result);
-            proc.Dispose();
+            Process.Start(processStartInfo);
         }
 
         private static void MacOsStuff()
